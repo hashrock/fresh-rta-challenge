@@ -1,6 +1,16 @@
 import { Head } from "$fresh/runtime.ts";
 import OdaiGen from "../islands/OdaiGen.tsx";
 import IconClock2 from "https://deno.land/x/tabler_icons_tsx@0.0.1/tsx/clock-2.tsx";
+
+const usefulSites = [
+  { name: "Fresh公式", url: "https://fresh.deno.dev/" },
+  { name: "Deno Deploy", url: "https://deno.com/deploy" },
+  { name: "Fresh Components", url: "https://fresh.deno.dev/components" },
+  { name: "TSX Tabler Icons", url: "https://tabler-icons-tsx.deno.dev/" },
+  { name: "Unsplash", url: "https://unsplash.com/ja" },
+  { name: "Lorem JPsum", url: "https://lorem-jpsum.vercel.app/" },
+];
+
 export default function Home() {
   return (
     <>
@@ -44,46 +54,16 @@ export default function Home() {
           </h2>
           <p>
             <ul class="list-disc list-inside">
-              <li>
-                <a
-                  class="text-blue-500 underline"
-                  href="https://fresh.deno.dev/"
-                >
-                  Fresh公式
-                </a>
-              </li>
-              <li>
-                <a
-                  class="text-blue-500 underline"
-                  href="https://fresh.deno.dev/components"
-                >
-                  Fresh Components
-                </a>
-              </li>
-              <li>
-                <a
-                  class="text-blue-500 underline"
-                  href="https://tabler-icons-tsx.deno.dev/"
-                >
-                  TSX Tabler Icons
-                </a>
-              </li>
-              <li>
-                <a
-                  class="text-blue-500 underline"
-                  href="https://unsplash.com/ja"
-                >
-                  Unsplash
-                </a>
-              </li>
-              <li>
-                <a
-                  class="text-blue-500 underline"
-                  href="https://lorem-jpsum.vercel.app/"
-                >
-                  Lorem JPsum
-                </a>
-              </li>
+              {usefulSites.map((site) => (
+                <li>
+                  <a
+                    class="text-blue-500 underline hover:text-blue-700"
+                    href={site.url}
+                  >
+                    {site.name}
+                  </a>
+                </li>
+              ))}
             </ul>
           </p>
         </article>
@@ -94,7 +74,7 @@ export default function Home() {
           </h2>
           <p>
             <a
-              class="text-blue-500 underline"
+              class="text-blue-500 underline hover:text-blue-700"
               href="https://github.com/hashrock/fresh-rta-challenge"
             >
               GitHub
