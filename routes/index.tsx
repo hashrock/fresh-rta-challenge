@@ -20,7 +20,8 @@ export default function Home() {
             なにこれ
           </h2>
           <p>
-            FreshでWebサイトを作る速度を競うRTA(Real Time Attack)です。
+            FreshでWebサイトを作る速度を競うRTA(Real Time Attack)です。<br />
+            (完成の定義ができなそうなのであくまでお遊び企画です)
           </p>
         </article>
         <OdaiGen />
