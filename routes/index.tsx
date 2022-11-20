@@ -77,8 +77,22 @@ export default function Home() {
                 >
                   Lorem JPsum
                 </a>
-              </li>              
+              </li>
             </ul>
+          </p>
+        </article>
+
+        <article>
+          <h2 class="text-lg my-4 font-bold">
+            About
+          </h2>
+          <p>
+            <a
+              class="text-blue-500 underline"
+              href="https://github.com/hashrock/fresh-rta-challenge"
+            >
+              GitHub
+            </a>
           </p>
         </article>
       </div>
