@@ -1,6 +1,6 @@
 import { Head } from "$fresh/runtime.ts";
 import OdaiGen from "../islands/OdaiGen.tsx";
-
+import IconClock2 from "https://deno.land/x/tabler_icons_tsx@0.0.1/tsx/clock-2.tsx";
 export default function Home() {
   return (
     <>
@@ -8,7 +8,12 @@ export default function Home() {
         <title>Fresh RTA</title>
       </Head>
       <div class="p-4 mx-auto max-w-screen-md space-y-16">
-        <h1 class="text-2xl font-bold">Fresh Web制作RTA</h1>
+        <h1 class="text-4xl font-bold flex items-center">
+          <IconClock2 class="inline-block w-10 h-10 mr-2" />
+          <div>
+            Fresh Web制作RTA
+          </div>
+        </h1>
 
         <article>
           <h2 class="text-lg my-4 font-bold">
